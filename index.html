@@ -21,11 +21,12 @@
     <H1>Cookies Test</H1>
     <FORM ID="letsgo" ACTION="#" METHOD="get">
         <LABEL>Ваш город:&nbsp;&nbsp;<INPUT ID="yourcity" NAME="livingplace" FORM="letsgo" TYPE="text" REQUIRED SIZE="50" PLACEHOLDER="Введите название населённого пункта"></LABEL>
-        <INPUT FORM="letsgo" TYPE="submit" VALUE="Запомнить">
     </FORM>
-    <BUTTON ID="goaway" onclick="localStorage.removeItem('area');area.value=''">Очистить</BUTTON>
-    <TEXTAREA ID="area"></TEXTAREA>
+    <BUTTON ID="goaway">Очистить</BUTTON>
     <SCRIPT SRC="cookie.js"></SCRIPT>
+<!--    <BUTTON ID="goaway" onclick="localStorage.removeItem('yourcity');yourcity.value=''">Очистить</BUTTON>
+        <INPUT FORM="letsgo" TYPE="submit" VALUE="Запомнить">
+    <TEXTAREA ID="area"></TEXTAREA>-->
 <!--
     <SCRIPT TYPE="text/javascript">
         "use strict";

@@ -14,5 +14,10 @@ jQuery.prototype.click = function(fn) {
 }
 const $ = (e) => new jQuery(e);
 
-area.value = localStorage.getItem('area');
-area.oninput = () => localStorage.setItem('area', area.value);
+yourcity.value = localStorage.getItem('yourcity');
+yourcity.oninput = () => localStorage.setItem('yourcity', yourcity.value);
+
+$('#goaway').click(e => {
+    localStorage.removeItem('yourcity');
+    yourcity.value='';
+});
