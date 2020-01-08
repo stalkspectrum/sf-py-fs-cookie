@@ -34,11 +34,16 @@ jQuery.prototype.text = function(newText) {
 }
 const $ = (e) => new jQuery(e);
 
+$('#subdiv22').hide();
+
 if (Boolean(localStorage.getItem('yourcity'))) {
     $('#subdiv11').hide();
     $('#subdiv12').html('<P>Теперь мы знаем ваш город. Это ' + localStorage.getItem('yourcity') + '</P>');
     $('#goaway').text('Стереть ненужные знания');
     $('#subdiv12').show();
+}
+
+if (localStorage.getItem('task2fixed') == '1') {
 }
 
 yourcity.value = localStorage.getItem('yourcity');
@@ -47,4 +52,13 @@ yourcity.oninput = () => localStorage.setItem('yourcity', yourcity.value);
 $('#goaway').click(e => {
     localStorage.removeItem('yourcity');
     yourcity.value='';
+});
+
+$('#savestate').click(e => {
+    localStorage.setItem('task2fixed', '1')
+});
+
+$('#forgetit').click(e => {
+    localStorage.removeItem('task2fixed');
+    task2fixed.value='';
 });
