@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML LANG="ru">
+<HEAD>
+<!--
+    <META HTTP-EQUIV="Set-Cookie" CONTENT="name=test_cookie">
+    <META HTTP-EQUIV="Set-Cookie" CONTENT="name=test_cookie; max-age=60; domain=ssszone.ru; path=/Python/testcookie">
+-->
+    <TITLE>Cookies task</TITLE>
+    <META CHARSET="utf-8">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<!--
+    <LINK REL="stylesheet" HREF="styles.css">
+    <SCRIPT>
+        'use strict';
+        alert( document.cookie );
+    </SCRIPT>
+-->
+</HEAD>
+<BODY>
+    <H1>Cookies Test</H1>
+    <FORM ID="letsgo" ACTION="#" METHOD="get">
+        <LABEL>Ваш город:&nbsp;&nbsp;<INPUT ID="yourcity" NAME="livingplace" FORM="letsgo" TYPE="text" REQUIRED SIZE="50" PLACEHOLDER="Введите название населённого пункта"></LABEL>
+        <INPUT FORM="letsgo" TYPE="submit" VALUE="Запомнить">
+    </FORM>
+    <BUTTON ID="goaway">Очистить</BUTTON>
+    <SCRIPT SRC="handlecookie.js"></SCRIPT>
+<!--
+    <SCRIPT TYPE="text/javascript">
+        "use strict";
+        document.cookie = "name=cuukvalue; Max-Age=120";
+        alert(document.cookie);
+    </SCRIPT>
+-->
+</BODY>
+</HTML>
