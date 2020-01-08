@@ -35,9 +35,9 @@ jQuery.prototype.text = function(newText) {
 const $ = (e) => new jQuery(e);
 
 if (Boolean(localStorage.getItem('yourcity'))) {
-    $('#subdiv1').hide();
-    $('#subdiv2').html('Теперь мы знаем ваш город. Это ' + localStorage.getItem('yourcity'));
-    $('#subdiv2').show();
+    $('#subdiv11').hide();
+    $('#subdiv12').html('Теперь мы знаем ваш город. Это ' + localStorage.getItem('yourcity'));
+    $('#subdiv12').show();
 }
 
 yourcity.value = localStorage.getItem('yourcity');
