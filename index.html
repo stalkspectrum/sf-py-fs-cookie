@@ -8,14 +8,19 @@
     <LINK REL="stylesheet" HREF="styles.css">
 </HEAD>
 <BODY>
-    <H1>Cookies Test</H1>
-    <FORM ID="letsgo" ACTION="#" METHOD="get">
-        <LABEL>Введите ваш город:&nbsp;&nbsp;<INPUT ID="yourcity" NAME="livingplace" FORM="letsgo" TYPE="text" REQUIRED SIZE="50" PLACEHOLDER="Введите название населённого пункта"></LABEL>
-    </FORM>
-    <BUTTON ID="goaway">Очистить</BUTTON>
+    <H1>Задание 1</H1>
+    <DIV ID="task1">
+        <DIV ID="subdiv11">
+            <LABEL>Введите ваш город:&nbsp;&nbsp;<INPUT ID="yourcity" NAME="livingplace" TYPE="text" REQUIRED SIZE="50" PLACEHOLDER="Введите название населённого пункта"></LABEL>
+        </DIV>
+        <DIV ID="subdiv12">
+        </DIV>
+            <BR>
+            <BUTTON ID="goaway">Очистить</BUTTON>
+    </DIV>
+    <HR>
+    <H1>Задание 2</H1>
+    <DIV ID="task2"></DIV>
     <SCRIPT SRC="cookie.js"></SCRIPT>
-<!--    <BUTTON ID="goaway" onclick="localStorage.removeItem('yourcity');yourcity.value=''">Очистить</BUTTON>
-        <INPUT FORM="letsgo" TYPE="submit" VALUE="Запомнить">
--->
 </BODY>
 </HTML>
