@@ -36,7 +36,8 @@ const $ = (e) => new jQuery(e);
 
 if (Boolean(localStorage.getItem('yourcity'))) {
     $('#subdiv11').hide();
-    $('#subdiv12').html('Теперь мы знаем ваш город. Это ' + localStorage.getItem('yourcity'));
+    $('#subdiv12').html('<P>Теперь мы знаем ваш город. Это ' + localStorage.getItem('yourcity') + '</P>');
+    $('#goaway').text('Стереть ненужные знания');
     $('#subdiv12').show();
 }
 
