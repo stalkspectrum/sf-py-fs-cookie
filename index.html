@@ -3,8 +3,8 @@
 <HEAD>
 <!--
     <META HTTP-EQUIV="Set-Cookie" CONTENT="name=test_cookie">
--->
     <META HTTP-EQUIV="Set-Cookie" CONTENT="name=test_cookie; max-age=600; domain=stalkspectrum.github.io; path=/">
+-->
     <TITLE>Cookies task</TITLE>
     <META CHARSET="utf-8">
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
@@ -23,8 +23,9 @@
         <LABEL>Ваш город:&nbsp;&nbsp;<INPUT ID="yourcity" NAME="livingplace" FORM="letsgo" TYPE="text" REQUIRED SIZE="50" PLACEHOLDER="Введите название населённого пункта"></LABEL>
         <INPUT FORM="letsgo" TYPE="submit" VALUE="Запомнить">
     </FORM>
-    <BUTTON ID="goaway">Очистить</BUTTON>
-    <SCRIPT SRC="handlecookie.js"></SCRIPT>
+    <BUTTON ID="goaway" onclick="localStorage.removeItem('area');area.value=''">Очистить</BUTTON>
+    <TEXTAREA ID="area"></TEXTAREA>
+    <SCRIPT SRC="cookie.js"></SCRIPT>
 <!--
     <SCRIPT TYPE="text/javascript">
         "use strict";
