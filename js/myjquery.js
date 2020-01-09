@@ -57,4 +57,9 @@ jQuery.prototype.setattrib = function(aName, aValue) {
     return this;
 }
 
+jQuery.prototype.remattrib = function(aName) {
+    this.each(element => element.removeAttribute(aName));
+    return this;
+}
+
 const $ = (e) => new jQuery(e);
