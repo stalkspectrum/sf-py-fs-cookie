@@ -1,4 +1,4 @@
-$('#subdiv22').hide();
+$('#subdiv23').hide();
 
 yourCity.value = localStorage.getItem('yourCity');
 if (Boolean(yourCity.value)) {
@@ -20,12 +20,13 @@ if (Boolean(cbBitMap)) {
         }
         $(cbIdStr).setattrib('disabled', 'true');
     }
-    $('#subdiv22').show();
+    $('#subdiv22').hide();
+    $('#subdiv23').show();
 }
 
 $('#goaway').click(e => {
     localStorage.removeItem('yourCity');
-    yourCity.value='';
+    yourCity.value = '';
 });
 
 $('#savestate').click(e => {
@@ -43,5 +44,5 @@ $('#savestate').click(e => {
 
 $('#forgetit').click(e => {
     localStorage.removeItem('cbBits');
-    cbBits.value='';
+    cbBits = '';
 });
